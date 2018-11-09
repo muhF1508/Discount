@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc4ff"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_hrgbarang"
+        android:layout_alignParentStart="true"
+        android:text="Harga Barang (Rp)"
+        android:textColor="#12005e"
+        android:textSize="20sp"
+        app:fontFamily="@font/comfortaa_light"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/editText_hrgbarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="Masukkan Harga Barang"
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="232dp"
+        android:text="Discount (%)"
+        android:textColor="#12005e"
+        android:textSize="20sp"
+        app:fontFamily="@font/comfortaa_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Masukkan Discount"
+        android:ems="10"
+        android:id="@+id/editText_discount"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/txt_bayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="221dp"
+        android:text="Total Yang Harus Dibayar:"
+        android:textAlignment="inherit"
+        android:textColor="#6a1b9a"
+        android:textSize="20sp"
+        app:fontFamily="@font/comfortaa_light" />
+
+    <TextView
+        android:id="@+id/txt_hasil"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_bayar"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="-45dp"
+        android:layout_marginRight="-45dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/capsule"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:layout_marginStart="45dp"
+        android:text="HITUNG"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/hitung"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/capsule"
+        android:fontFamily="@font/comfortaa_light"
+        android:onClick="keluar"
+        android:text="EXIT"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Silakan Menghitung Diskonnya"
+        android:textColor="#12005e"
+        android:textSize="24sp" />
+
+</RelativeLayout>
